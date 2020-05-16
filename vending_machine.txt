@@ -1,0 +1,39 @@
+In Python Create a Vending Machine ~
+
+Objective: The objective of this assignment is to create a Finite State Machine that represents a vending machine. The vending machine should dispense three different types of drinks. When actions are performed, output should be clear and well formatted for the user.
+
+Variables: You may use more than this, these are simply the values that are needed to get full credit on the assignment.
+
+● state - This will maintain the state of your finite state machine. Initial Value: A
+
+● total_inserted - The amount of money the user has inserted. Initial Value: 0
+
+● drink_1 - This will hold the number of drinks in the machine of type 1. Initial Value: 2
+
+● drink _2 - This will hold the number of drinks in the machine of type 2. Initial Value: 4
+
+● drink _3 - This will hold the number of drinks in the machine of type 3. Initial Value: 1
+
+States: These are all the possible states that you will have to account for. An explanation of what each state is for can be seen below. By designing the vending machine to use these states and following the state diagram provided, you can fully implement a simple vending machine.
+
+● State A: Start or Idle. This is the state where the machine is waiting for an input of ‘start’
+
+● State B: Insert. This state will accept an input of coins by asking a user for the amount of a coin. It can also accept ‘refund’ as an input to cancel the transaction.
+
+● State C: Select. This state will ask a user to choose a drink to be dispensed. It should take input of at least 3 different types of drinks and also if the user wants a refund.
+
+● State D: This state should dispense a drink to the user, saying ‘Dispensing Drink’ and charge the customer for the drink.
+
+● State E: Return Change. This state should return the amount of change back to the user saying, ‘Returning Change’ and the amount given back.
+
+● State F: Stock. This state should restock the machine with its initial quantity for each item.
+
+● State G: Off. This state represents when the machine is turned off.
+
+State Diagram: Below is a state diagram for the vending machine to help you complete the assignment. An explanation of what each part of the state diagram means will be given in class.
+
+Rectangular Boxes: These represent states. The name of the state is labeled, and the code for that state is presented below. If you were to be in the ‘Start’ state, you would set your state variable to A. A lot of logic will occur within these states before transitions can occur.
+
+Arrows: Arrows represent transitions. These transitions are between states and have labels attached to them. The labels are transition conditions or actions that take place to get to the next state.
+
+Diamonds: Diamonds represent a choice or questions. Based upon conditions of the system, the diamond blocks will direct the flow of the state diagram. These can often be linked to a conditional or some form of conditional or loop statement.
